@@ -21,9 +21,9 @@ class CircleTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning{
         self.transitionContext = transitionContext
         
         //2
-        var containerView = transitionContext.containerView()
-        var fromViewController = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey) as! ViewController
-        var toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey) as! ViewController
+        let containerView = transitionContext.containerView()
+        let fromViewController = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey) as! ViewController
+        let toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey) as! ViewController
         
         let sourceView = fromViewController.view
         let destView = toViewController.view
@@ -31,10 +31,13 @@ class CircleTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning{
         //3
         containerView!.addSubview(destView)
         
+        
+        
         destView.frame = CGRectOffset(destView.frame, 0, destView.frame.size.height);
-        UIView.animateWithDuration(0.5, animations: { () -> Void in
+        UIView.animateWithDuration(self.transitionDuration(transitionContext), animations: { () -> Void in
             destView.frame = CGRectOffset(destView.frame, 0, -destView.frame.size.height);
-            destView.layoutIfNeeded()
+            
+//            destView.layoutIfNeeded()
             }) { (finished) -> Void in
                 transitionContext.completeTransition(true)
         }
