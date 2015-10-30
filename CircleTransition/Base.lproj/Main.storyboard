@@ -71,8 +71,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcb-sc-OSA">
-                                <rect key="frame" x="526" y="30" width="44" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcb-sc-OSA">
+                                <rect key="frame" x="526" y="74" width="44" height="44"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="4oR-FK-oRX"/>
@@ -122,10 +122,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
+                        <outlet property="delegate" destination="KG5-fn-oZ0" id="Iwg-wF-ARh"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="DCa-IT-6yk"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="86M-ZZ-NtC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="KG5-fn-oZ0" customClass="TerryNavigationControllerDelegate" customModule="CircleTransition" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="276" y="-343"/>
         </scene>

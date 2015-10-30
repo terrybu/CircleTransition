@@ -12,6 +12,8 @@
 		D9744F951BE2E173005C023E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9744F931BE2E173005C023E /* Main.storyboard */; };
 		D9744F971BE2E173005C023E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9744F961BE2E173005C023E /* Assets.xcassets */; };
 		D9744F9A1BE2E173005C023E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9744F981BE2E173005C023E /* LaunchScreen.storyboard */; };
+		D9744FA21BE2F5C7005C023E /* TerryNavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9744FA11BE2F5C7005C023E /* TerryNavigationControllerDelegate.swift */; settings = {ASSET_TAGS = (); }; };
+		D9744FA41BE2F651005C023E /* CircleTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9744FA31BE2F651005C023E /* CircleTransitionAnimator.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		D9744F961BE2E173005C023E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9744F991BE2E173005C023E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9744F9B1BE2E173005C023E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9744FA11BE2F5C7005C023E /* TerryNavigationControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TerryNavigationControllerDelegate.swift; sourceTree = "<group>"; };
+		D9744FA31BE2F651005C023E /* CircleTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleTransitionAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				D9744F8F1BE2E173005C023E /* AppDelegate.swift */,
 				D9744F911BE2E173005C023E /* ViewController.swift */,
+				D9744FA11BE2F5C7005C023E /* TerryNavigationControllerDelegate.swift */,
+				D9744FA31BE2F651005C023E /* CircleTransitionAnimator.swift */,
 				D9744F931BE2E173005C023E /* Main.storyboard */,
 				D9744F961BE2E173005C023E /* Assets.xcassets */,
 				D9744F981BE2E173005C023E /* LaunchScreen.storyboard */,
@@ -135,7 +141,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9744F921BE2E173005C023E /* ViewController.swift in Sources */,
+				D9744FA41BE2F651005C023E /* CircleTransitionAnimator.swift in Sources */,
 				D9744F901BE2E173005C023E /* AppDelegate.swift in Sources */,
+				D9744FA21BE2F5C7005C023E /* TerryNavigationControllerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
