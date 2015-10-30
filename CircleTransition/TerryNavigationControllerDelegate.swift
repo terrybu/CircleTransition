@@ -12,7 +12,12 @@ class TerryNavigationControllerDelegate: NSObject, UINavigationControllerDelegat
     
     func navigationController(navigationController: UINavigationController, animationControllerForOperation operation: UINavigationControllerOperation, fromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         
-        return CircleTransitionAnimator()
+        if operation == UINavigationControllerOperation.Push {
+            if fromVC.isKindOfClass(ViewController) && toVC.isKindOfClass(SecondViewController) {
+                return CircleTransitionAnimator()
+            }
+        }
+        return nil
     }
     
 }

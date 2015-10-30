@@ -59,10 +59,10 @@
             </objects>
             <point key="canvasLocation" x="967" y="-343"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="ch0-b7-CMc">
             <objects>
-                <viewController id="RL0-Mg-cnd" customClass="ViewController" customModule="CircleTransition" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="RL0-Mg-cnd" customClass="SecondViewController" customModule="CircleTransition" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OOw-J0-RGg"/>
                         <viewControllerLayoutGuide type="bottom" id="Qma-hQ-scZ"/>

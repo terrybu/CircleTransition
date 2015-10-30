@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D9030A1D1BE382F60067E2B5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9030A1C1BE382F60067E2B5 /* SecondViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D9744F901BE2E173005C023E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9744F8F1BE2E173005C023E /* AppDelegate.swift */; };
 		D9744F921BE2E173005C023E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9744F911BE2E173005C023E /* ViewController.swift */; };
 		D9744F951BE2E173005C023E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9744F931BE2E173005C023E /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D9030A1C1BE382F60067E2B5 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		D9744F8C1BE2E173005C023E /* CircleTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircleTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9744F8F1BE2E173005C023E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9744F911BE2E173005C023E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				D9744F8F1BE2E173005C023E /* AppDelegate.swift */,
 				D9744F911BE2E173005C023E /* ViewController.swift */,
+				D9030A1C1BE382F60067E2B5 /* SecondViewController.swift */,
 				D9744FA11BE2F5C7005C023E /* TerryNavigationControllerDelegate.swift */,
 				D9744FA31BE2F651005C023E /* CircleTransitionAnimator.swift */,
 				D9744F931BE2E173005C023E /* Main.storyboard */,
@@ -143,6 +146,7 @@
 				D9744F921BE2E173005C023E /* ViewController.swift in Sources */,
 				D9744FA41BE2F651005C023E /* CircleTransitionAnimator.swift in Sources */,
 				D9744F901BE2E173005C023E /* AppDelegate.swift in Sources */,
+				D9030A1D1BE382F60067E2B5 /* SecondViewController.swift in Sources */,
 				D9744FA21BE2F5C7005C023E /* TerryNavigationControllerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +295,7 @@
 				D9744FA01BE2E173005C023E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

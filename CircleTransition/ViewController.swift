@@ -13,10 +13,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var button: UIButton!
     
     @IBAction func circleTapped(sender:UIButton) {
-        let image = UIImage(named: "ipad")
-        let overlay = UIImageView(image: image)
-        overlay.frame.size = CGSize(width: 100, height: 100)
-        UIApplication.sharedApplication().delegate?.window!!.addSubview(overlay)
+//        let image = UIImage(named: "ipad")
+//        let overlay = UIImageView(image: image)
+//        overlay.frame.size = CGSize(width: 100, height: 100)
+//        UIApplication.sharedApplication().delegate?.window!!.addSubview(overlay)
         
         self.navigationController?.popViewControllerAnimated(true)
     }
