@@ -33,11 +33,14 @@ class CircleTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning{
         
         destView.frame = CGRectOffset(destView.frame, 0, destView.frame.size.height);
         UIView.animateWithDuration(self.transitionDuration(transitionContext), animations: { () -> Void in
-            destView.frame = CGRectMake(0, destView.frame.size.height/2, destView.frame.size.width, destView.frame.size.height)
+//            destView.frame = CGRectMake(0, destView.frame.size.height/2, destView.frame.size.width, destView.frame.size.height)
+            
+            destView.frame = CGRectOffset(destView.frame, 0, -destView.frame.size.height/2)
             
 //            destView.layoutIfNeeded()
             }) { (finished) -> Void in
                 transitionContext.completeTransition(true)
+                containerView!.insertSubview(sourceView, belowSubview: destView)
         }
         
     }

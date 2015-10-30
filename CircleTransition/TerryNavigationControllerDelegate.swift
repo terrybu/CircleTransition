@@ -14,6 +14,9 @@ class TerryNavigationControllerDelegate: NSObject, UINavigationControllerDelegat
         
         if operation == UINavigationControllerOperation.Push {
             if fromVC.isKindOfClass(ViewController) && toVC.isKindOfClass(SecondViewController) {
+                
+                toVC.modalPresentationStyle = UIModalPresentationStyle.OverCurrentContext
+                toVC.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
                 return CircleTransitionAnimator()
             }
         }
